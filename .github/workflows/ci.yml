@@ -32,3 +32,4 @@ jobs:
       gitops_path: apps/auth
     secrets:
       GITOPS_TOKEN: ${{ secrets.GITOPS_TOKEN }}
+      DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
