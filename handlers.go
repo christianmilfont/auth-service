@@ -59,7 +59,7 @@ func (a *App) validateKeyHandler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	// Chave válida
-	w.WriteHeader(http.StatusInternalServerError)
+	w.WriteHeader(http.StatusOK)
 	json.NewEncoder(w).Encode(map[string]string{"message": "Chave válida"})
 }
 
